@@ -1,22 +1,30 @@
-# create-svelte
+# Developer Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A modern developer portfolio built with SvelteKit and Sanity CMS, created as part of the "Master Svelte 5 & SvelteKit" course.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Dynamic content management with Sanity CMS
+- Contact form with SendGrid email integration
+- Modern, responsive design
+- Server-side rendering with SvelteKit
+- TypeScript support
+
+## Getting Started
+
+Create a new project using the following commands:
 
 ```bash
 # create a new project in the current directory
-npx sv create
+npm create svelte@latest
 
 # create a new project in my-app
-npx sv create my-app
+npm create svelte@latest my-app
 ```
 
-## Developing
+## Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run dev
@@ -35,4 +43,14 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Environment Variables
+
+You'll need to set up the following environment variables:
+
+```bash
+SENDGRID_API_KEY=your_sendgrid_key
+SANITY_PROJECT_ID=your_sanity_project_id
+SANITY_DATASET=your_dataset_name
+```
+
+> Note: Make sure to set up your Sanity Studio and SendGrid account before running the application.
